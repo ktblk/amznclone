@@ -69,6 +69,7 @@ class ProductsController < ApplicationController
     end
     @productsresult = @search.results
     @next_page = @productsresult.next_page
+    # render json: @productsresult
   end
 
   private

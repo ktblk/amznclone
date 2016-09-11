@@ -11,9 +11,9 @@
   <!-- </div>< /.col-lg-6 -->
 <!-- </div> /.row -->
 <div id="search">
-  <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+  <%= form_tag('/search', :method => "get", id: "search-form") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
-      <%= submit_tag "Search", :name => nil %>
+      <%= submit_tag "Search", :name => nil, class: "submittag" %>
   <% end %>
 </div>
 

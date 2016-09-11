@@ -33,3 +33,32 @@ $(document).on('click','#destroy', function(event){
   });
 
 });
+
+$(".submittag").click(function(e){
+  e.preventDefault();
+  $.ajax({
+    url: '/search',
+    method: "GET",
+    dataType: "JSON",
+    success: function(data) {
+      console.log(data);
+    },
+    error: function (error){
+      console.error(error);
+    }
+  })
+});
+
+// ("#saveFile").click(function() {
+//       $.ajax({
+//         url : "/users/documents/"+ file_id[1],
+//         type: "PUT",
+//         data : { document: { file: fire_text } },
+//         success: function(data) {
+//           console.log("Success");
+//           window.location.href = '/'
+//         },
+//         error: function (error){
+//           console.error(error);
+//         }
+//       });

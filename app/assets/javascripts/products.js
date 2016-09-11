@@ -1,6 +1,8 @@
 // Place all the behaviors and hooks related to the matching controller here.
 // All this logic will automatically be available in application.js.
-$('#destroy').on('click',function(event){
+// alert("hello")
+
+$(document).on('click','#destroy', function(event){
   event.preventDefault();
   var self = $(this);
 
@@ -21,7 +23,7 @@ $('#destroy').on('click',function(event){
          method: "DELETE",
          dataType: "JSON",
          success: function(data) {
-           self.parent().remove();
+           self.closest('#troptions').remove();
            swal("Deleted!", "Your file has been deleted.", "success");
          }
        });

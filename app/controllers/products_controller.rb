@@ -5,12 +5,6 @@ class ProductsController < ApplicationController
   # GET /products.json
   def index
     @products = Product.all
-    @search = Product.search do
-      fulltext params[:search]
-      paginate :page => params[:next_page] || :par_page => 20
-    end
-    @productsresult = @search.results
-    @next_page = @productsresult.next_page
   end
 
   # GET /products/1
@@ -67,6 +61,14 @@ class ProductsController < ApplicationController
       format.html { redirect_to root_path }
       format.json { head :no_content }
     end
+  end
+
+  def search
+    # @search = Product.search do
+    #   fulltext params[:search]
+    # end
+    # @productsresult = @search.results
+    # @next_page = @productsresult.next_page
   end
 
   private

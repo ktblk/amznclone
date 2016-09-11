@@ -4,7 +4,7 @@ class Product < ApplicationRecord
   has_many :reviews
 
   searchable do
-    text: :name
+    text :name
   end
 
   def formatted_price

@@ -1,5 +1,16 @@
 <p id="notice"><%= notice %></p>
 
+<div class="row">
+  <div class="col-sm-4" style="float: right; margin-right: 1px;">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for..." style="font-family: Avenir;">
+      <span class="input-group-btn">
+        <button class="btn btn-info" type="button" style="font-family: Avenir;">Find it!</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+
 <h1 id="products">Products</h1>
 
 <table id="tbl">
@@ -20,7 +31,7 @@
         <td>$<%= product.formatted_price %></td>
         <td><button type="button" class="btn btn-success" style="font-family: Avenir;" id="show"><%= link_to 'Show', product %></button></td>
         <td><button type="button" class="btn btn-info" style="font-family: Avenir;" id="edit"><%= link_to 'Edit', edit_product_path(product) %></button></td>
-        <td><button type="button" class="btn btn-primary" style="font-family: Avenir;" id="destroy"><%= link_to 'Destroy', data: { url: 'products/destroy' } %></button></td>
+        <td><button type="button" class="btn btn-primary" style="font-family: Avenir;" id="destroy"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,6 +39,6 @@
 
 <br>
 
-<button type="button" class="btn btn-info" style="font-family: Avenir;" id="newprod">
+<button type="button" class="btn btn-info" style="font-family: Avenir; margin-left: 1px;" id="newprod">
   <%= link_to 'New Product', new_product_path %>
 </button>

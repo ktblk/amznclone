@@ -37,14 +37,17 @@
 
 #show {
   padding: 3px;
+  padding-bottom: 1px;
 }
 
 #edit {
   padding: 3px;
+  padding-bottom: 1px;
 }
 
 #destroy {
   padding: 3px;
+  margin-bottom: 1px;
 }
 
 #namefield {

@@ -5,35 +5,61 @@
 #products {
   font-family: Avenir;
   color: #00BFFF;
+  font-weight: bolder;
 }
 
  #notice {
-  font-family: Menlo;
+  font-family: Avenir;
 }
 
 #tbl {
   font-family: Avenir;
   border-style: solid;
-
   width: 100%;
+  letter-spacing: 1.5px;
 }
 
 #name {
   color: #1E90FF;
-  float: left;
 }
 
 #description {
   color: #1E90FF;
-  align: center;
 }
 
 #price {
   color: #1E90FF;
-  float: right;
 }
 
 #newprod {
   text-decoration: none;
+}
 
+#show {
+  padding: 3px;
+}
+
+#edit {
+  padding: 3px;
+}
+
+#destroy {
+  padding: 3px;
+}
+
+#namefield {
+  font-family: Avenir;
+}
+
+#descriptionfield {
+  font-family: Avenir;
+}
+
+#pricefield {
+  font-family: Avenir;
+}
+
+#submitform {
+  font-family: Avenir;
+  color: #1E90FF;
 }

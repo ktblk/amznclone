@@ -11,22 +11,22 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field" id="namefield">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
 
-  <div class="field">
+  <div class="field" id="descriptionfield">
     <%= f.label :description %>
     <%= f.text_area :description %>
   </div>
 
-  <div class="field">
-    <%= f.label :price_in_cents %>
+  <div class="field" id="pricefield">
+    <%= f.label :price %>
     <%= f.number_field :price_in_cents %>
   </div>
 
-  <div class="actions">
+  <div class="actions" id="submitform">
     <%= f.submit %>
   </div>
 <% end %>

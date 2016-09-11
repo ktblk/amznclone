@@ -66,3 +66,9 @@
   font-family: Avenir;
   color: #1E90FF;
 }
+
+#search {
+  float: right;
+  font-family: Avenir;
+  margin-right: 1px;
+}

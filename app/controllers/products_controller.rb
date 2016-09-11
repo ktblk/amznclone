@@ -64,11 +64,11 @@ class ProductsController < ApplicationController
   end
 
   def search
-    # @search = Product.search do
-    #   fulltext params[:search]
-    # end
-    # @productsresult = @search.results
-    # @next_page = @productsresult.next_page
+    @search = Product.search do
+      fulltext params[:search]
+    end
+    @productsresult = @search.results
+    @next_page = @productsresult.next_page
   end
 
   private

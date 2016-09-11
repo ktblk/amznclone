@@ -1,15 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-sm-4" style="float: right; margin-right: 1px;">
     <div class="input-group">
-      <input type="text" class="form-control" placeholder="Search for..." style="font-family: Avenir;">
+      <input type="text" class="form-control inputsearch" placeholder="Search for..." style="font-family: Avenir;">
       <span class="input-group-btn">
         <button class="btn btn-info" type="button" style="font-family: Avenir;">Find it!</button>
       </span>
-    </div><!-- /input-group -->
-  </div><!-- /.col-lg-6 -->
-</div><!-- /.row -->
+    </div>< /input-group -->
+  <!-- </div>< /.col-lg-6 -->
+<!-- </div> /.row -->
+<div id="search">
+  <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Search Products" %>
+      <%= submit_tag "Search", :name => nil %>
+  <% end %>
+</div>
 
 <h1 id="products">Products</h1>
 

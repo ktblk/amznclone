@@ -2,3 +2,38 @@
   Place all the styles related to the matching controller here.
   They will automatically be included in application.css.
 */
+#products {
+  font-family: Avenir;
+  color: #00BFFF;
+}
+
+ #notice {
+  font-family: Menlo;
+}
+
+#tbl {
+  font-family: Avenir;
+  border-style: solid;
+
+  width: 100%;
+}
+
+#name {
+  color: #1E90FF;
+  float: left;
+}
+
+#description {
+  color: #1E90FF;
+  align: center;
+}
+
+#price {
+  color: #1E90FF;
+  float: right;
+}
+
+#newprod {
+  text-decoration: none;
+
+}
